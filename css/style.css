@@ -1,3 +1,192 @@
 * {
+    /*zodat er geen onnodige padding en borders zijn*/
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+body {
+    background: rgba(211, 211, 211, 1);
+    
+}
+nav{
+    
+    width: 30%;
+    padding:1em 1.5em 1em 1.5em;
+    
+    
+
+}
+.navigatie_link_list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+   
+}
+
+.navigatie_links{
+    transition: all 0.3s ease-in 0s;
+    border-radius: 1.5em;
+    padding: 0.5em;
+}
+.navigatie_links:hover{
+    background-color: rgba(9,9,121,1);
+     a {
+        color: rgba(245, 243, 244, 1);
+    }
+        
+    
+}
+.navigatie_links a {
+    color: rgba(9,9,121,1);
+    font-weight: bolder;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin:1em 5em 1em 5em;
+    background-color: rgba(245, 243, 244, 0.5);
+    
+    border-radius: 2em;
+    
+    
+}
+img{
+    width: 10em;
+    border: 2px solid rgba(9,9,121,1);
+    border-radius: 15%;
+    transition: all 0.3s ease-in 0s;
+}
+img:hover{
+    width: 9em;
+    cursor: pointer;
+    
+}
+button{
+    background-color: rgba(9,9,121,1);
+    color: rgba(211, 211, 211, 1);
+    padding:1.25em 2.25em 1.25em 2.25em;
+    border: 2px solid;
+    border-radius: 0.5em;
+    font-weight: bolder;
+    transition: all 0.3s ease-in 0s;
+}
+button:hover {
+    background-color: rgba(9,9,121,1);
+    color: rgba(211, 211, 211, 1);
+    padding: 1em 2em 1em 2em;
+    cursor: pointer;
+}
+#aboutme{
+    background-color:rgba(211, 211, 211, 1);
+    margin: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20em;
+    margin: 10em 10em 5em 10em;
+    border:2px solid  rgba(211, 211, 211, 1);
+    border-radius: 1.5em;
+    transition: all 0.3s ease-in 0s;
+
+}
+
+#aboutme_text{
+    padding: 2em;
+}
+#aboutme_app{
+    position: relative;
+    padding: 2em;
+    color: rgba(211, 211, 211, 1);
+    top: -15%;
+    right: -5%;
+    width: 60%;
+    height: 130%;
+    background-color: rgba(9,9,121,1);
+    border: 2px solid rgba(211, 211, 211, 1);
+    border-radius: 1.5em;
+    transition: all 0.3s ease-in 0s;
+}
+#contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.input_fields{
+    display: flex;
+    margin: 1.5em;
+}
+.input_field_a{
+    margin-left: 1em;
+}
+.glass_backdrop{
+    background-color: rgba(245, 243, 244, 0.5);
+    width: 80%;
+    height: 75vh;
+    margin: auto;
+    position: relative;
+    padding-top: 0.5em;
+    margin-top: 3em;
+    border-radius: 5em;
+
+
+}
+.input_field_a input{
+    width: 100%; 
+    height: 3em;
+    padding: 1em;
+    border: 2px solid rgba(211, 211, 211, 1);
+    border-radius: 1em;
+    background: transparent;
+
+}
+.input_field_a input::placeholder, textarea::placeholder{
+    color:rgba(211, 211, 211, 1);
+}
+textarea{
+    position: relative;
+    left: -75%;
+    width: 250%; 
+    height: 10em;
+    padding: 1em;
+    border: 2px solid rgba(211, 211, 211, 1);
+    margin-bottom: 2em;
+    border-radius: 1em;
+    background: transparent;
+    transition: all 0.3s ease-in 0s;
+}
+textarea:hover{
+    width: 255%;
+    left: -77%;
+    height: 11em;
+
+}
+textarea:focus, input:focus{
+    background-color: rgba(9,9,121,1);
+    color: rgba(211, 211, 211, 1);
+    
+}
+#aboutme:hover {
+    background-color:rgba(9,9,121,1);
+    #aboutme_text{
+        color: rgba(211, 211, 211, 1);
+    }
+    #aboutme_app{
+        background-color: rgba(211, 211, 211, 1);
+        color: rgba(9,9,121,1);
+    }
+    .input_field_a input, textarea{
+        border-color: rgba(9,9,121,1);
+    }.input_field_a input::placeholder,textarea::placeholder{
+        color: rgba(9,9,121,1);
+    }
 }
